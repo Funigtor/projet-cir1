@@ -16,6 +16,15 @@
                         require_once "./Map.php";
 
                         session_start();
+                        
+                        if (isset($_SESSION["L_O"])) {
+                            $matrice = $_SESSION["L_O"];
+                        }
+                        else{
+                            $matrice = new Map(5);
+                        }
+                        
+                        $matrice->afficher();
                         ?>
                     </code>
                 </td>
