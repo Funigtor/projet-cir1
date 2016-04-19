@@ -16,7 +16,7 @@
             }
         }
         function afficher(){
-            for ($i= 0;$i <$this->taille;&i++){
+            for ($i= 0;$i <$this->taille;$i++){
                 for($j = 0; $j< $this->taille;j++)
             }
         }
