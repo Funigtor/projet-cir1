@@ -10,7 +10,7 @@
             $this->taille = $taille;
             $this ->matrice = array(array());
             for($i=0;$i<$taille;$i++){
-                for($j=0;$j < $largeur;$j++){
+                for($j=0;$j < $taille;$j++){
                     $this->matrice[$i][$j]=rand(0,1);
                 }
             }
@@ -18,7 +18,7 @@
         function afficher(){
             for ($i= 0;$i <$this->taille;$i++){
                 for($j = 0; $j< $this->taille;$j++)
-                    if($matrice[$i][$j]==0){
+                    if($this->matrice[$i][$j]==0){
                         echo "O";
                     }else{
                         echo "X";
