@@ -17,16 +17,25 @@
 
                         session_start();
                         
-                        if (isset($_SESSION["L_O"])) {
-                            $matrice = $_SESSION["L_O"];
+                        if (isset($_SESSION["matrice"])) {
+                            $matrice = $_SESSION["matrice"];
                         }
                         else{
                             $matrice = new Map(5);
                         }
+                        if (isset($_SESSION["x"]) && isset($_SESSION["y"])) {
+                            $x = $_SESSION["x"];
+                            $y = $_SESSION["y"];
+                            $matrice->actualiser();
+                        }
+                        
+                        
                         
                         $matrice->afficher();
+                        
+                        
                         ?>
-                    </code>
+                    </code> 
                 </td>
             </tr>
         </table>
