@@ -7,8 +7,18 @@
                     <link rel="stylesheet" type="text/css" href="./css/style.css"/>
     </head>
     <body>
-        <?php
-        
-        ?>
+        <table>
+            <tr>
+                <td>
+                    <code>
+                        <?php
+                        require_once "./Map.php";
+
+                        session_start();
+                        ?>
+                    </code>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>
