@@ -1,8 +1,8 @@
 <?php
     class map{
         //déclaration des variables utilisés
-        private &taille;
-        private &matrice;
+        private $taille;
+        private $matrice;
 
 
         //constructeur du plateau de jeux
@@ -17,7 +17,12 @@
         }
         function afficher(){
             for ($i= 0;$i <$this->taille;$i++){
-                for($j = 0; $j< $this->taille;j++)
+                for($j = 0; $j< $this->taille;$j++)
+                    if($matrice[$i][$j]==0){
+                        echo "O";
+                    }else{
+                        echo "X";
+                    }
+                } echo'<br/>';
             }
-        }
     }
