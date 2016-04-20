@@ -22,6 +22,7 @@
                         }
                         else{
                             $matrice = new Map(5);
+                            $_SESSION["matrice"] = $matrice;
                         }
                         if (isset($_SESSION["x"]) && isset($_SESSION["y"])) {
                             $x = $_SESSION["x"];
