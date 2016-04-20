@@ -3,7 +3,6 @@
         //déclaration des variables utilisés
         private $taille;
         private $matrice;
-        private $case;
 
 
         //constructeur du plateau de jeux
@@ -20,9 +19,9 @@
             for ($i= 0;$i <$this->taille;$i++){
                 for($j = 0; $j< $this->taille;$j++)
                     if($this->matrice[$i][$j]==0){
-                        echo " <a href= \" location: ./index.php?x=$j&y=$i \" value=\"0\" >O</a> ";
+                        echo " <a href= \" location: index.php?x=$j&y=$i \" value=\"0\" >O</a> ";
                     }else{
-                        echo " <a href= \" location: ./index.php?x=$j&y=$i \" value=\"1\" >X</a> ";
+                        echo " <a href= \" location: index.php?x=$j&y=$i \" value=\"1\" >X</a> ";
                     }
                  echo'<br>';
                 } 
