@@ -8,15 +8,11 @@
     </head>
     <body>
         <?php include "header.php" ?>
-        <table>
-            <tr>
-                <td>
-                    <code>
-                        <form method="post">
-                            <input type="number" name="largeur" min="5" max="9" pattern="d+">
-                            <input type="number" name="hauteur" min="5" max="9" pattern="d+">
-                            <button type="submit">valider</button>
-                            <br>
+        <form method="post">
+            <input type="number" name="largeur" min="5" max="9" pattern="d+">
+            <input type="number" name="hauteur" min="5" max="9" pattern="d+">
+            <button type="submit">valider</button>
+        </form>
                             <?php
                             require_once "./Map.php";
 
@@ -49,11 +45,6 @@
                             $_SESSION["matrice"] = $matrice;
 
                             ?>
-                        </form>
-                    </code>
-                </td>
-            </tr>
-        </table>
         <?php include "footer.php" ?>
     </body>
 </html>
