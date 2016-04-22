@@ -15,3 +15,20 @@ footer {
 img {
     max-width: 80px;
 }
+
+.faker {
+    min-height: 112px;
+    background-image: url(img/zrtFaker.png);
+    background-repeat: repeat-x;
+}
+
+.win {
+    text-align: center;
+    font-weight: bolder;
+    color: green;
+    font-size: 84px;
+}
+
+audio {
+    display: none;
+}
