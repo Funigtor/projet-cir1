@@ -8,43 +8,27 @@
     </head>
     <body>
         <?php include "header.php" ?>
-        <form method="post">
-            <input type="number" name="largeur" min="5" max="9" pattern="d+">
-            <input type="number" name="hauteur" min="5" max="9" pattern="d+">
-            <button type="submit">valider</button>
-        </form>
-                            <?php
-                            require_once "./Map.php";
 
-                            session_start();
+        <?php
+        require_once "./Map.php";
 
+        session_start();
 
-                            if (isset($_POST["largeur"]) && isset($_POST["hauteur"])) {
-                                $largeur = $_POST["largeur"];
-                                $hauteur = $_POST["hauteur"];
-                                $matrice = new Map($largeur,$hauteur);
-                            }
-                            else{
-                                if (isset($_SESSION["matrice"])) {
-                                    $matrice = $_SESSION["matrice"];
-                                }
-                                else {
-                                    $matrice = new Map(5,5);
-                               }
-                            }
+        if (!isset($_SESSION["matrice"])){
+            header("Location: new.php");
+        }
+        else{
+            $matrice = $_SESSION["matrice"];
+            if (filter_input_array(INPUT_GET)) {
+                $x = filter_input(INPUT_GET, "x");
+                $y = filter_input(INPUT_GET, "y");
+                $matrice->actualiser($x,$y);
+            }
 
-                            if (filter_input_array(INPUT_GET)) {
-                                $x = filter_input(INPUT_GET, "x");
-                                $y = filter_input(INPUT_GET, "y");
-                                $matrice->actualiser($x,$y);
-                            }
-
-
-
-                            $matrice->afficher();
-                            $_SESSION["matrice"] = $matrice;
-
-                            ?>
+            $matrice->afficher();
+            $_SESSION["matrice"] = $matrice;
+        }
+        ?>
         <?php include "footer.php" ?>
     </body>
 </html>
