@@ -7,7 +7,7 @@
                     <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
-        <h1>Lights Out</h1>
+        <?php include "header.php" ?>
         <table>
             <tr>
                 <td>
@@ -22,7 +22,7 @@
 
                             session_start();
 
-                            
+
                             if (isset($_POST["largeur"]) && isset($_POST["hauteur"])) {
                                 $largeur = $_POST["largeur"];
                                 $hauteur = $_POST["hauteur"];
@@ -50,12 +50,10 @@
 
                             ?>
                         </form>
-                    </code> 
+                    </code>
                 </td>
             </tr>
         </table>
-        <footer>
-            Notre projet CIR 1 <!-- Insérer quelquechose ici -->
-        </footer>
+        <?php include "footer.php" ?>
     </body>
 </html>
