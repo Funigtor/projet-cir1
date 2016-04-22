@@ -12,44 +12,30 @@
             <tr>
                 <td>
                     <code>
-                        <form method="post">
-                            <input type="number" name="largeur" min="5" max="9" pattern="d+">
-                            <input type="number" name="hauteur" min="5" max="9" pattern="d+">
-                            <button type="submit">valider</button>
-                            <br>
-                            <?php
-                            require_once "./Map.php";
+                        <?php
+                        require_once "./Map.php";
 
-                            session_start();
-
-                            
-                            if (isset($_POST["largeur"]) && isset($_POST["hauteur"])) {
-                                $largeur = $_POST["largeur"];
-                                $hauteur = $_POST["hauteur"];
-                                $matrice = new Map($largeur,$hauteur);
-                            }
-                            else{
-                                if (isset($_SESSION["matrice"])) {
-                                    $matrice = $_SESSION["matrice"];
-                                }
-                                else {
-                                    $matrice = new Map(5,5);
-                               }
-                            }
-
-                            if (filter_input_array(INPUT_GET)) {
-                                $x = filter_input(INPUT_GET, "x");
-                                $y = filter_input(INPUT_GET, "y");
-                                $matrice->actualiser($x,$y);
-                            }
-
-
-
-                            $matrice->afficher();
+                        session_start();
+                        
+                        if (isset($_SESSION["matrice"])) {
+                            $matrice = $_SESSION["matrice"];
+                        }
+                        else{
+                            $matrice = new Map(5);
                             $_SESSION["matrice"] = $matrice;
-
-                            ?>
-                        </form>
+                        }
+                        if (isset($_SESSION["x"]) && isset($_SESSION["y"])) {
+                            $x = $_SESSION["x"];
+                            $y = $_SESSION["y"];
+                            $matrice->actualiser();
+                        }
+                        
+                        
+                        
+                        $matrice->afficher();
+                        
+                        
+                        ?>
                     </code> 
                 </td>
             </tr>
