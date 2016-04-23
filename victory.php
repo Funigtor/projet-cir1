@@ -14,6 +14,11 @@
             VICTOIRE !
         </div>
         <div class="faker"></div>
+        <div class="container">
+            <form action=new.php>
+                <button>Reset</button>
+            </form>
+        </div>
         <?php include "footer.php" ?>
     </body>
 </html>

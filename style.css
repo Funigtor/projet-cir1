@@ -32,3 +32,8 @@ img {
 audio {
     display: none;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+}

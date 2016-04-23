@@ -29,6 +29,10 @@
             $_SESSION["matrice"] = $matrice;
         }
         ?>
+        
+            <form action="new.php">
+                <button>Reset</button>
+            </form>
         <?php include "footer.php" ?>
     </body>
 </html>
