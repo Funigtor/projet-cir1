@@ -37,3 +37,15 @@ audio {
     display: flex;
     justify-content: center;
 }
+
+.generation {
+    border: 2px black solid;
+    max-width: 50%;
+    margin-bottom: 10px;
+}
+
+.validation {
+    float: right;
+    width: 50%;
+    height: 90%;
+}

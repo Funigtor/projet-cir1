@@ -12,11 +12,13 @@
         <!-- TODO : Mettre le choix des cartes
             Idée : Utiliser une boucle for pour n'écrire qu'une fois la déclaration.-->
         <div> Ou sinon générez une matrice aléatoire avec les dimensions que vous souhaitez. <br />
-            <form method="post" action="create.php">
-                Largeur : <input type="number" name="largeur" min="5" max="9" pattern="d+">
-                Hauteur : <input type="number" name="hauteur" min="5" max="9" pattern="d+">
-                <button type="submit">valider</button>
-            </form>
+            <div class="generation"> 
+                <form method="post" action="create.php">
+                    Largeur : <input type="number" name="largeur" min="5" max="9" pattern="d+"> <br />
+                    Hauteur : <input type="number" name="hauteur" min="5" max="9" pattern="d+">
+                    <div class="validation"><button type="submit">Valider</button></div>
+                </form>
+            </div>
         </div>
         <?php include "footer.php" ?>
     </body>
