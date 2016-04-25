@@ -35,9 +35,9 @@
             for ($i= 0;$i <$this->hauteur;$i++){
                 for($j = 0; $j< $this->largeur;$j++)
                     if($this->matrice[$i][$j]==0){
-                        echo " <a href=\"index.php?x=$j&y=$i \" value=\"0\" ><img src = \"img/Kappa_off.png\" alt=\"Off\" /></a> ";
+                        echo " <a href=\"index.php?x=$j&y=$i \"><img src=\"img/Kappa_off.png\" alt=\"Off\" /></a> ";
                     }else{
-                        echo " <a href=\"index.php?x=$j&y=$i \" value=\"1\" ><img src = \"img/Kappa_on.png\" alt=\"On\" /></a> ";
+                        echo " <a href=\"index.php?x=$j&y=$i \"><img src=\"img/Kappa_on.png\" alt=\"On\" /></a> ";
                     }
                  echo'<br>';
                 }

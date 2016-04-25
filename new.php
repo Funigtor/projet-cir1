@@ -22,8 +22,8 @@
         <div> Ou sinon générez une matrice aléatoire avec les dimensions que vous souhaitez. (À vos propres risques !) <br />
             <div class="generation"> 
                 <form method="post" action="create.php">
-                    Largeur : <input type="number" name="largeur" min="5" max="9" pattern="d+"> <br />
-                    Hauteur : <input type="number" name="hauteur" min="5" max="9" pattern="d+">
+                    Largeur : <input type="number" name="largeur" min="5" max="9" > <br />
+                    Hauteur : <input type="number" name="hauteur" min="5" max="9" >
                     <div class="validation"><button type="submit">Valider</button></div>
                 </form>
             </div>
