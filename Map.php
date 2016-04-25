@@ -17,6 +17,20 @@
                 }
             }
         }
+        function verifvictoire(){
+            $victoire = TRUE;
+            for ($i=0;$i<$this->hauteur;$i++){
+                for ($j=0;$j<$this->largeur;$j++){
+                    if ($this->matrice[$i][$j]){
+                        $victoire = FALSE;
+                        break;
+                    }
+                }
+            }
+            if ($victoire){
+                header("Location: victory.php");
+            }
+        }
         function afficher(){
             for ($i= 0;$i <$this->hauteur;$i++){
                 for($j = 0; $j< $this->largeur;$j++)
@@ -42,5 +56,6 @@
             if($y-1 >= 0){
                 $this->matrice[$x][$y-1] = !$this->matrice[$x][$y-1];
             }
+            $this->verifvictoire();
         }
     }
