@@ -49,3 +49,13 @@ audio {
     width: 50%;
     height: 90%;
 }
+
+.listeDeMap{
+    display: flex;
+    border: 3px black solid;
+}
+
+.mapProposee{
+    margin: auto;
+    border: 1px black solid;
+}

@@ -1,3 +1,4 @@
+<?php include "maplist.php" ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,9 +10,16 @@
     <body>
         <?php include "header.php" ?>
         Choisissez une matrice dans la liste
-        <!-- TODO : Mettre le choix des cartes
-            Idée : Utiliser une boucle for pour n'écrire qu'une fois la déclaration.-->
-        <div> Ou sinon générez une matrice aléatoire avec les dimensions que vous souhaitez. <br />
+        <div class="listeDeMap">
+            <?php 
+                $i = 0;
+                foreach ($listeMap as $NOTUSED){
+                    $i++;
+                    echo '<div class="mapProposee"><img src="img/map'.$i.'.png" alt="Map '.$i.'" /> <hr /><form action="chooseMap.php"><input type="hidden" name="nombreMap" value="'.$i.'"><button type="submit">Choisir cette map</button></form></div>'; 
+                }
+            ?>
+        </div>
+        <div> Ou sinon générez une matrice aléatoire avec les dimensions que vous souhaitez. (À vos propres risques !) <br />
             <div class="generation"> 
                 <form method="post" action="create.php">
                     Largeur : <input type="number" name="largeur" min="5" max="9" pattern="d+"> <br />
