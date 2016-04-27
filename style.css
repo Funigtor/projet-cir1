@@ -8,7 +8,7 @@ h1 {
 
 
 footer {
-    position:relative;
+    position:absolute;
     bottom : 0px;
     text-align: center;
     font-size: 10px;
@@ -66,10 +66,9 @@ audio {
     margin: auto;
     border: 1px black solid;
 }
-#tableau{
-    display: inline-block;
+table{    
     border: 1px black solid;
-    margin:auto;
+    margin: auto auto auto auto;
     background-color: darkred;
     position: relative;
     border-radius:20px ;

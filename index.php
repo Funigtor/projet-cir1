@@ -7,8 +7,11 @@
                     <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
-        <?php include "header.php" ?>
 
+        <?php include "header.php" ?>
+        <table>
+            <tr>
+                <td>
         <?php
         require_once "./Map.php";
 
@@ -24,12 +27,14 @@
                 $y = filter_input(INPUT_GET, "y");
                 $matrice->actualiser($x,$y);
             }
-            echo ' <div id = "tableau"> ';
+
             $matrice->afficher();
-            echo '</div>';
             $_SESSION["matrice"] = $matrice;
         }
         ?>
+                </td>
+            </tr>
+    </table>
         <div class="container">
             <form action="new.php">
                 <button>Reset</button>

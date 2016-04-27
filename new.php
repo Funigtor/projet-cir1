@@ -19,11 +19,13 @@
                 }
             ?>
         </div>
-        <div> Ou sinon générez une matrice aléatoire avec les dimensions que vous souhaitez. (À vos propres risques !) <br />
+        <div> Ou sinon générez une matrice aléatoire avec les dimensions que vous souhaitez. <br />
             <div class="generation">
                 <form method="post" action="create.php">
                     Largeur :
                     <select name="largeur">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
                         <option value="5" selected="selected">5</option>
                         <option value="6">6</option>
                         <option value="7">7</option>
@@ -32,6 +34,8 @@
                     </select>
                     Hauteur :
                     <select name="hauteur">
+                        <option value="3">3</option>
+                        <option value="4">4</option>
                         <option value="5" selected="selected">5</option>
                         <option value="6">6</option>
                         <option value="7">7</option>

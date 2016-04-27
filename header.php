@@ -1,1 +1,1 @@
-<h1>Lights Out</h1>
+<h1>Kappas Out</h1>
