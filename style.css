@@ -47,7 +47,7 @@ audio {
 .generation {
     border: 2px black solid;
     max-width: 50%;
-    margin-bottom: 10px;
+    margin: 50px auto auto auto;
     display: inline-block;
 }
 
@@ -71,5 +71,5 @@ table{
     margin: auto auto auto auto;
     background-color: darkred;
     position: relative;
-    border-radius:20px ;
+    border-radius:20px;
 }
