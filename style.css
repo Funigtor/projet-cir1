@@ -1,5 +1,5 @@
 body {
-    background-color: #74c5ff;
+    background-image:url(img/Background.jpg) ;
 }
 
 h1 {
@@ -8,25 +8,31 @@ h1 {
 
 
 footer {
+    position:relative;
+    bottom : 0px;
+    text-align: center;
     font-size: 10px;
     font-style: italic;
 }
 
 img {
-    max-width: 80px;
+    max-width: 50px;
 }
 
-.faker {
-    min-height: 112px;
-    background-image: url(img/zrtFaker.png);
-    background-repeat: repeat-x;
-}
+
 
 .win {
     text-align: center;
     font-weight: bolder;
-    color: green;
+    background-color: darkred;
+    border-radius:150px ;
+    color:ivory;
+    padding-top: 10%;
+    padding-bottom:10%;
     font-size: 84px;
+    margin-left: 30%;
+    margin-right: 20%;
+    display: inline-block;
 }
 
 audio {
@@ -42,6 +48,7 @@ audio {
     border: 2px black solid;
     max-width: 50%;
     margin-bottom: 10px;
+    display: inline-block;
 }
 
 .validation {
@@ -58,4 +65,12 @@ audio {
 .mapProposee{
     margin: auto;
     border: 1px black solid;
+}
+#tableau{
+    display: inline-block;
+    border: 1px black solid;
+    margin:auto;
+    background-color: darkred;
+    position: relative;
+    border-radius:20px ;
 }

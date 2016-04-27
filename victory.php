@@ -16,7 +16,7 @@
         <div class="faker"></div>
         <div class="container">
             <form action=new.php>
-                <button>Reset</button>
+                <button>Rejouer</button>
             </form>
         </div>
         <?php include "footer.php" ?>

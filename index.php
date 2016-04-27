@@ -24,15 +24,17 @@
                 $y = filter_input(INPUT_GET, "y");
                 $matrice->actualiser($x,$y);
             }
-
+            echo ' <div id = "tableau"> ';
             $matrice->afficher();
+            echo '</div>';
             $_SESSION["matrice"] = $matrice;
         }
         ?>
-        
+        <div class="container">
             <form action="new.php">
                 <button>Reset</button>
             </form>
+        </div>
         <?php include "footer.php" ?>
     </body>
 </html>
