@@ -8,9 +8,10 @@ h1 {
 
 
 footer {
-    position:absolute;
+    position:relative;
     bottom : 0px;
     text-align: center;
+    margin-top:20px;
     font-size: 10px;
     font-style: italic;
 }
@@ -46,6 +47,7 @@ audio {
 
 .generation {
     background-color: darkred;
+    color : ivory;
     border: 1px black solid;
     max-width: 50%;
     margin: 50px 37% auto 37%;
