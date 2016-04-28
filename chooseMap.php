@@ -11,7 +11,7 @@
         <?php include "header.php" ?>
         <br/>
         <br/>
-        <p><h1>Mode édition</h1></p>
+        <h1>Mode édition</h1>
         <table>
             <tr>
                 <td>
