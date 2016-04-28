@@ -45,10 +45,12 @@ audio {
 }
 
 .generation {
-    border: 2px black solid;
+    background-color: darkred;
+    border: 1px black solid;
     max-width: 50%;
-    margin: 50px auto auto auto;
+    margin: 50px 37% auto 37%;
     display: inline-block;
+    border-radius: 20px
 }
 
 .validation {
@@ -66,7 +68,7 @@ audio {
     margin: auto;
     border: 1px black solid;
 }
-table{    
+table{
     border: 1px black solid;
     margin: auto auto auto auto;
     background-color: darkred;

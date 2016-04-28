@@ -16,7 +16,7 @@
         require_once "./Map.php";
 
         session_start();
-
+        
         if (!isset($_SESSION["matrice"])){
             header("Location: new.php");
         }
@@ -26,6 +26,7 @@
                 $x = filter_input(INPUT_GET, "x");
                 $y = filter_input(INPUT_GET, "y");
                 $matrice->actualiser($x,$y);
+
             }
 
             $matrice->afficher();

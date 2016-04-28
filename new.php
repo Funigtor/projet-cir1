@@ -8,8 +8,9 @@
     </head>
     <body>
         <?php include "header.php" ?>
-        <div> Composez vous-même votre grille de départ <br />
+        <div>
             <div class="generation">
+                <p>Composez vous-même votre grille de départ</p> <br />
                 <form method="post" action="chooseCreate.php">
                     Largeur :
                     <select name="largeur">
@@ -35,8 +36,9 @@
                 </form>
             </div>
         </div>
-        <div> Ou sinon générez une grille aléatoire aux dimensions souhaitées. <br />
+        <div>
             <div class="generation">
+                <p>Ou sinon générez une grille aléatoire aux dimensions souhaitées.</p> <br />
                 <form method="post" action="create.php">
                     Largeur :
                     <select name="largeur">

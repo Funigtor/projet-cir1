@@ -9,6 +9,9 @@
     <body>
 
         <?php include "header.php" ?>
+        <br/>
+        <br/>
+        <p><h1>Mode édition</h1></p>
         <table>
             <tr>
                 <td>
