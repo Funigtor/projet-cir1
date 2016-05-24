@@ -5,7 +5,9 @@ body {
 h1 {
     text-align: center;
 }
-
+h2 {
+    text-align: center;
+}
 
 footer {
     position:relative;
@@ -54,7 +56,16 @@ audio {
     display: inline-block;
     border-radius: 20px
 }
+a {
+text-decoration: none;
+color: ivory;
+}
 
+
+a:hover{
+    color:black;
+
+}
 .validation {
     float: right;
     width: 50%;
@@ -76,4 +87,9 @@ table{
     background-color: darkred;
     position: relative;
     border-radius:20px;
+}
+.link{
+    border-radius:20px;
+    padding-top: 50px;
+    background-color:darkred;
 }

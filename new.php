@@ -6,6 +6,12 @@
                     <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
-        <a href="newT.php">Tacoyaki</a>
-        <a href="newLO.php">Lightsout</a>
+        <h1>Choix du jeux</h1>
+            <div class="link">
+                <a href="newT.php"><h2>Tacoyaki</h2></a>
+            <div/>
+            <div class="link">
+                <a href="newLO.php"><h2>Lightsout</h2></a>
+            </div>
     </body>
+</html>

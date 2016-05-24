@@ -7,7 +7,6 @@
             <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
-        <?php include "header.php" ?>
         <audio src="sound/victory.ogg" autoplay></audio>
         <div class="faker"></div>
         <div class="win">
