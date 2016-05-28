@@ -6,7 +6,7 @@
                     <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
-        <h1>Choix du jeux</h1>
+        <h1>Choix du jeu</h1>
             <div class="link">
                 <a href="newT.php"><h2>Tacoyaki</h2></a>
             <div/>
