@@ -7,9 +7,6 @@
                     <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
-        <table>
-            <tr>
-                <td>
         <?php
         require_once "./Map.php";
         require_once "./MapT.php";
@@ -27,7 +24,10 @@
 
             }
 	    echo '<h1>'.$_SESSION["jeu"].'</h1>';
-            $matrice->afficher();
+        ?><table>
+            <tr>
+                <td>
+        <?php    $matrice->afficher();
             $_SESSION["matrice"] = $matrice;
         }
         ?>
