@@ -8,6 +8,7 @@
     </head>
     <body>
         <?php
+		session_start();
 		if ($_SESSION["jeu"] == "Tacoyaki"){
 			echo "<h1>Tacoyaki</h1>";
 		} else {
