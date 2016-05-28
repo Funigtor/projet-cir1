@@ -7,7 +7,14 @@
             <link rel="stylesheet" type="text/css" href="./style.css"/>
     </head>
     <body>
-        <audio src="sound/victory.ogg" autoplay></audio>
+        <?php
+		if ($_SESSION["jeu"] == "Tacoyaki"){
+			echo "<h1>Tacoyaki</h1>";
+		} else {
+			echo "<h1>Kappas Out</h1>";
+		}
+	?>
+	<audio src="sound/victory.ogg" autoplay></audio>
         <div class="faker"></div>
         <div class="win">
             VICTOIRE !

@@ -12,4 +12,5 @@ if (isset($_POST["largeur"]) && isset($_POST["hauteur"]) && $_POST["largeur"] !=
 }
 
 $_SESSION["matrice"] = $matrice;
+$_SESSION["jeu"] = "Kappas Out";
 header("Location: index.php");

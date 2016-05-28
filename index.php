@@ -26,7 +26,7 @@
                 $matrice->actualiser($x,$y);
 
             }
-
+	    echo '<h1>'.$_SESSION["jeu"].'</h1>';
             $matrice->afficher();
             $_SESSION["matrice"] = $matrice;
         }
