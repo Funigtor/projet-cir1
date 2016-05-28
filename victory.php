@@ -15,11 +15,9 @@
 		}
 	?>
 	<audio src="sound/victory.ogg" autoplay></audio>
-        <div class="faker"></div>
         <div class="win">
             VICTOIRE !
         </div>
-        <div class="faker"></div>
         <div class="container">
             <form action=new.php>
                 <button>Rejouer</button>
