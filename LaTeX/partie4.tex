@@ -1,0 +1,27 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\title{Projet CIR 1}
+\author{Chevalier - Duthoit - Grousseau}
+\date{}
+\begin{document}
+\maketitle
+\section{Tacoyaki}
+Comme dans le jeu Lights Out, il faut éteindre le plateau par contre dans ce jeu ce ne sont plus les cases adjacentes qui sont modifiées en plus de la case cliquée mais celles qui sont en diagonal sur toutes la lignes.
+\section{Lights Out Enhanced}
+\subsection{Plateau Torique}
+
+\subsection{Dimension 3}
+
+\subsection{Optimisation mémoire}
+
+\subsection{Cases à n états}
+Dans notre modélisation, nous n'avions que deux états possibles : allumé ou éteint, respectivement représentés par 1 et 0. \\
+Si nous souhaitons représenter notre jeu avec des cases à n états, il suffit d'utiliser des valeurs comprises entre 0 et n, et arrivé à n on retourne à 0 au clic suivant.
+\section{Limites}
+Toutes ces variantes utilisent des matrices, les plateaux étant rectangulaires. Si nous utilisions une boule comme plateau, nous ne pourrions plus utiliser notre solveur tel quel, même en le modifiant.
+\section{Rendu final}
+\includegraphics[scale=1]{../img/Kappa_off.png}
+\end{document}
