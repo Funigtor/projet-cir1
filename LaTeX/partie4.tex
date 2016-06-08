@@ -2,26 +2,25 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{amssymb}
-\usepackage{graphicx}
 \title{Projet CIR 1}
 \author{Chevalier - Duthoit - Grousseau}
 \date{}
 \begin{document}
 \maketitle
+Document \LaTeX
 \section{Tacoyaki}
-Comme dans le jeu Lights Out, il faut éteindre le plateau par contre dans ce jeu ce ne sont plus les cases adjacentes qui sont modifiées en plus de la case cliquée mais celles qui sont en diagonal sur toutes la lignes.
+Comme dans le jeu Lights Out, il faut éteindre le plateau. En revanche, dans ce jeu, ce ne sont plus les cases adjacentes qui sont modifiées en plus de la case cliquée mais toutes celles qui sont en diagonales.
 \section{Lights Out Enhanced}
 \subsection{Plateau Torique}
-
+Ce changement n'influe pas sur le vecteur $P$. Il nécessite seulement de modifier la matrice $A$.
 \subsection{Dimension 3}
-
+Pour un plateau de taille $h \times l \times p$ on a une matrice $M(h \times l \times p,h \times l \times p)$. Il n'y a pas d'autre changement. On pourrait donc généraliser le principe à des dimensions supérieures à 3, bien qu'il serait difficile de l'afficher.
 \subsection{Optimisation mémoire}
-
+On remarque qu'une fois la solution obtenue, il suffit de donner la première ligne à l'utilisateur. Il n'a ensuite qu'à appuyer sur toutes les lumières situées en-dessous des lumières allumées en allant de haut en bas. \\
+Sur une matrice $3 \times 3 \times 3$ on donne la première ligne et la première colonne.  
 \subsection{Cases à n états}
 Dans notre modélisation, nous n'avions que deux états possibles : allumé ou éteint, respectivement représentés par 1 et 0. \\
-Si nous souhaitons représenter notre jeu avec des cases à n états, il suffit d'utiliser des valeurs comprises entre 0 et n, et arrivé à n on retourne à 0 au clic suivant.
+Si nous souhaitons représenter notre jeu avec des cases à n états, il suffit d'utiliser des valeurs comprises entre $0$ et $n$, et arrivé à $n$ on retourne à $0$ au clic suivant.
 \section{Limites}
 Toutes ces variantes utilisent des matrices, les plateaux étant rectangulaires. Si nous utilisions une boule comme plateau, nous ne pourrions plus utiliser notre solveur tel quel, même en le modifiant.
-\section{Rendu final}
-\includegraphics[scale=1]{../img/Kappa_off.png}
 \end{document}
